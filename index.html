@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        body {
+            margin: 0;
+            color: #867272;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            /* overflow: hidden;  */
+
+        }
+
+        canvas {
+            display: inline-block;
+            height: 100px; /* Adjust as needed */
+            width: 100px;
+            background-color: #ffffff; /* Optional: to ensure the canvas background is visible */
+            /* overflow: hidden;  */
+        }
+
+        main {
+            padding: 20px;
+            position: relative;
+            z-index: 1; /* Ensures that the main content is on top of the canvas if needed */
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .post-canvas-content {
+            padding: 20px;
+            background-color: #f9f9f9; /* Optional: Different background color for distinction */
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>WIZARD AUTO</h1>
+        <section>
+            <h2>Begin scrolling to see things change</h2>
+        </section>
+        <section>
+            <h2>Changing Objects Position</h2>
+            <p>The object's position is now changing</p>
+        </section>
+        <section>
+            <h2>Changing Objects Rotation</h2>
+            <p>The object's rotation is now changing</p>
+        </section>
+        <section>
+            <h2>Zooming object</h2>
+            <p>Bubbles are randomly moving in the window</p>
+        </section>
+        <section>
+            <h2>You are at the bottom</h2>
+            <p>The object will automatically rotate around the y-axis</p>
+            <p>Now you can scroll back to the top to reverse the animation</p>
+        </section>
+    </main>
+
+    <canvas id="scene-canvas"></canvas>
+
+   
+
+    <div class="post-canvas-content">
+        <section>
+            <h2>Additional Content Section</h2>
+            <p>This content appears after the canvas.</p>
+        </section>
+        <section>
+            <h2>Another Section</h2>
+            <p>More information displayed below the canvas.</p>
+        </section>
+    </div>
+
+    <script type="module" src="src/index.js"></script>
+</body>
+</html>
